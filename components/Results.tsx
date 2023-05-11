@@ -1,5 +1,14 @@
 "use client"
-const Results = ({snippit, keywords, backButton, prompt}) => {
+
+
+interface ResultProps{
+  prompt: string,
+  snippit: string,
+  keywords: string[],
+  backButton: any
+}
+
+const Results: React.FunctionComponent<ResultProps> = ({snippit, keywords, backButton, prompt}) => {
   return (
     <>
       <div>
